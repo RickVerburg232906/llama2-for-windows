@@ -17,3 +17,7 @@ general:
 model:
   token: <YOUR_HUGGING_FACE_TOKEN>
   id: meta-llama/Llama-2-7b-chat-hf
+
+socket:
+  REQ: tcp://localhost:12443
+  REP: tcp://*:12443

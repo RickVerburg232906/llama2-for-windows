@@ -57,6 +57,10 @@ def main():
         'model': {
             'token': token,
             'id': f'meta-llama/{model_selected}'
+        },
+        'socket': {
+            'REQ': "tcp://localhost:12443",
+            'REP': "tcp://*:12443"
         }
     }
 
