@@ -1,0 +1,19 @@
+# -> config.yaml
+# Possible llama models:
+# Llama-2-7b-hf
+# Llama-2-7b-chat-hf
+# Llama-2-13b-hf
+# Llama-2-13b-chat-hf
+# Llama-2-70b-hf
+# Llama-2-70b-chat-hf
+
+general:
+
+  logging_level: WARNING
+
+  # Select batch-size (21->1000)
+  pytorch_cuda_config: max_split_size_mb:<BATCH_SIZE>
+
+model:
+  token: <YOUR_HUGGING_FACE_TOKEN>
+  id: meta-llama/Llama-2-7b-chat-hf
