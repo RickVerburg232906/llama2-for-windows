@@ -18,11 +18,12 @@ Skip this step if already installed. This toolkit is necessary to harness the fu
 5. Make sure the environment variables are set (specifically PATH).
 6. Restart your computer.
 
-Once it is installed in your computer verify the installation running `nvidia-smi.exe` in PowerShell. It should appear some info like this:
+Once it is installed in your computer verify the installation running `nvcc --version` in PowerShell. It should appear some info like this:
 
 <p align="center">
-  <img src="https://github.com/SamthinkGit/llama2-for-windows/assets/92941012/4517361f-cb5d-4872-a94d-25b87e30adf9" alt="NVIDIA CUDA installation" height=400/>
+  <img src="https://github.com/SamthinkGit/llama2-for-windows/assets/92941012/928d9b1b-e7b8-4c72-8986-07d0f98b5943" alt="NVIDIA CUDA installation" height=100/>
 </p>
+
 
 ## Installing Dependencies
 Ensure you have previously installed [Python](https://www.tutorialspoint.com/how-to-install-python-in-windows) and [pip](https://phoenixnap.com/kb/install-pip-windows). Then download all the necessary libraries using the terminal:
