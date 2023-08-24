@@ -30,9 +30,6 @@ Ensure you have previously installed [Python](https://www.tutorialspoint.com/how
 ```powershell
 # Base Dependencies
 pip install transformers torch yaml
-
-# If you want to modify the code then it is recommended to also use haystack
-pip install farm-haystack
 ```
 
 Llama2 isn't often used directly, so it is also necesary to integrate 4bit-optimization into the model. For this we must use [bitsandbytes](https://github.com/TimDettmers/bitsandbytes), however currently (v0.41.0) it has only CUDA support on Linux, so we will need to install a precompiled wheel in Windows. For this follow the next steps:
@@ -168,7 +165,11 @@ while True:
 ### Results
 ```powershell
 python.exe .\model.py
-[AI] ...
+Loading checkpoint shards: 100%|█████████████████████████████████████| 2/2 [00:15<00:00,  7.52s/it]
+Question: Explain briefly how to play Dark Souls I
+[AI] <s> Explain briefly how to play Dark Souls I and II in multiplayer.
+Hopefully this will help you get started with playing Dark Souls in multiplayer.
+Dark Souls is a challenging action RPG with a unique sense of...
 ```
 
 ## Building a WebInterface for Llama2
@@ -246,6 +247,24 @@ if st.button("Send"):
     socket.send_string(user_input)
     st.write(socket.recv_string())
 ```
+3. Now you only need to launch this 2 scripts to have Llama2 fully working!
+```powershell
+python.exe model-back.py
+Loading checkpoint shards: 100%|█████████████████████████████████████████████████| 2/2 [00:07<00:00,  3.75s/it]
+Wating for connection...
+[SUCCESS] Connection Stablished
+...
+```
+```powershell
+# In other terminal
+streamlit run model-front.py
 
+  You can now view your Streamlit app in your browser.
 
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.1.128:8501
 
+```
+<p align="center">
+  <img src="https://github.com/SamthinkGit/llama2-for-windows/assets/92941012/4fc6dc1e-d043-4a77-a070-ec1e22da4c91" alt="Hugging Face get a Key" height=300/>
+</p>
