@@ -4,7 +4,7 @@ This guide will explain how to set up everything in Windows to run new Meta Llam
 ## Prerequisites
 
 - CUDA capable computer (NVIDIA's graphics card).
-- NVIDIA RTX 3080 or higher recommended (I'm using this one, and works right on the edge).
+- NVIDIA RTX 3070 or higher recommended (I'm using this one, and works right on the edge).
 - 8GB VRAM (determined by the graphics card)
 - 12GB RAM at least
 - Some Command Line Skills & Patience
@@ -21,7 +21,7 @@ Skip this step if already installed. This toolkit is necessary to harness the fu
 Once it is installed in your computer verify the installation running `nvidia-smi.exe` in PowerShell. It should appear some info like this:
 
 <p align="center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/0*R2hD-Wuvium-yaRd.png" alt="NVIDIA CUDA installation" height=400/>
+  <img src="https://github.com/SamthinkGit/llama2-for-windows/assets/92941012/4517361f-cb5d-4872-a94d-25b87e30adf9" alt="NVIDIA CUDA installation" height=400/>
 </p>
 
 ## Installing Dependencies
