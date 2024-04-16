@@ -12,12 +12,8 @@ general:
   logging_level: WARNING
 
   # Select batch-size (21->1000)
-  pytorch_cuda_config: max_split_size_mb:<BATCH_SIZE>
+  pytorch_cuda_config: max_split_size_mb:25
 
 model:
-  token: <YOUR_HUGGING_FACE_TOKEN>
+  token: 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
   id: meta-llama/Llama-2-7b-chat-hf
-
-socket:
-  REQ: tcp://localhost:12443
-  REP: tcp://*:12443
